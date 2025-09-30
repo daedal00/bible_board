@@ -1,0 +1,17 @@
+name = "bibleboard"
+main = "./src/server.js"
+compatibility_date="2023-05-18"
+
+[vars]
+SOURCE_CHANNEL_ID = ""  # Channel to scan for reactions
+POST_CHANNEL_ID = ""    # Channel to post leaderboard
+GUILD_ID = ""          # Server ID for command registration
+
+[triggers]
+crons = ["5 7 * * 1"]  # Monday at 07:05 UTC
+
+# [secrets]
+# DISCORD_TOKEN
+# DISCORD_PUBLIC_KEY
+# DISCORD_APPLICATION_ID
+# ADMIN_KEY           # For admin routes authentication
