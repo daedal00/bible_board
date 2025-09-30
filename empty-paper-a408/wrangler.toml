@@ -1,0 +1,12 @@
+name = "bible-board"
+main = "src/worker.js"
+compatibility_date = "2025-09-01"
+
+[triggers]
+# every Monday 07:05 UTC (≈ Monday 00:05 America/Vancouver)
+crons = ["5 7 * * 1"]
+
+[vars]
+SOURCE_CHANNEL_ID = "1414837000992981063"     # your #daily-reading-check
+POST_CHANNEL_ID   = "1410749163200712821"     # where weekly posts go
+GUILD_ID          = "1410749162592534601"
